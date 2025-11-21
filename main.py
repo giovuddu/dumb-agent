@@ -117,7 +117,6 @@ def main(user_prompt, verbose=False):
                             results.append(res.parts[0].function_response.response)
                             if verbose:
                                 print(f"-> {res.parts[0].function_response.response}")
-                    print(results)
                     messages.append(
                         types.Content(
                             role="user",
